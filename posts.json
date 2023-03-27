@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "title": "Monday, March 27",
+      "content": "Today was a busy day at work, but I managed to stay focused and get everything done. In the evening, I went for a run and felt really good afterwards. Looking forward to getting some rest tonight.",
+      "date": "2023-03-27",
+      "timestamp": "1648387200"
+    },
+    {
+      "title": "Tuesday, March 28",
+      "content": "I had a great day today. I met up with a friend for lunch and we had a nice chat. In the evening, I started reading a new book and I'm really enjoying it so far. Feeling grateful for the small things.",
+      "date": "2023-03-28",
+      "timestamp": "1648473600"
+    },
+    {
+      "title": "Wednesday, March 29",
+      "content": "Today was a bit of a struggle. I didn't sleep well last night and felt tired all day. I tried to stay productive, but my mind kept wandering. Hoping for a better night's sleep tonight.",
+      "date": "2023-03-29",
+      "timestamp": "1648560000"
+    },
+    {
+      "title": "Thursday, March 30",
+      "content": "I took some time for self-care today and it really helped me feel more centered. I did some yoga in the morning and spent some time journaling. In the evening, I watched a movie and had some popcorn. Feeling refreshed.",
+      "date": "2023-03-30",
+      "timestamp": "1648646400"
+    },
+    {
+      "title": "Friday, March 31",
+      "content": "I had a productive day at work today and felt like I accomplished a lot. In the evening, I met up with some friends and we went out for dinner. It was nice to catch up and spend some time together. Feeling grateful for good company.",
+      "date": "2023-03-31",
+      "timestamp": "1648732800"
+    }
+  ]
+}

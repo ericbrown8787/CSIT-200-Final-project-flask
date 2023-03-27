@@ -2,7 +2,12 @@
 
 {% block body %}
 
- 
+{%for post in posts_list%}
+    <section>
+        <h4>{{post['title']}}</h4>
+        <p>{{post['date']}}</p>
+        <p>{{post['content']}}</p>
+    </section>
+{% endfor %}
 
-<p>This is a blog post with lots of text!</p>
 {% endblock %}
