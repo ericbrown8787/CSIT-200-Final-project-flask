@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<form method="post">
+        <label for="id">Title</label>
+      
+        <input type="text" name="id"
+               placeholder="Message id"
+               value="{{ request.form['id'] }}"></input>
+        
+
+        <label for="content">Message Content</label>
+      
+        <textarea name="content"
+                  placeholder="Message content"
+                  rows="15"
+                  cols="60"
+                  >{{ request.form['content'] }}</textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+{% endblock %}
