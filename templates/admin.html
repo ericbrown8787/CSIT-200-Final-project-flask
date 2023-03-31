@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<form method="post">
-        <label for="id">Title</label>
+<form action="/admin" method="POST">
+        <label for="title">Title</label>
       
-        <input type="text" name="id"
+        <input type="text" name="title" id="title"
                placeholder="Message id"
                value="{{ request.form['id'] }}"></input>
         
 
         <label for="content">Message Content</label>
       
-        <textarea name="content"
+        <textarea name="content" id="content"
                   placeholder="Message content"
                   rows="15"
                   cols="60"
