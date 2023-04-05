@@ -6,25 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
 </head>
-<header>
-    <h1>Our Blog</h1>
-<nav class = "nav-links">
-    <div class = "nav-bar">
-        <ul>
-            <li>
-                <a href="/" class= "nav-bar">Home</a>
-                <a href = "#about" class = "nav-bar">About </a>
-                <a href = "/articles" class = "nav-bar">Articles</a>
-                <a href="#contact" class="nav-links">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-</header>
+
 <body>
+    <header>
+        <h1>Our Blog</h1>
+    <nav class = "nav-links">
+        <div class = "nav-bar">
+            <ul>
+                <li>
+                    <a href="/" class= "nav-bar">Home</a>
+                    <a href = "#about" class = "nav-bar">About </a>
+                    <a href = "/articles" class = "nav-bar">Articles</a>
+                    <a href="#contact" class="nav-links">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <main>
 {% block body %}
 
 
-{% endblock %} 
+{% endblock %}
+</main>
+<footer></footer> 
 </body>
 </html>

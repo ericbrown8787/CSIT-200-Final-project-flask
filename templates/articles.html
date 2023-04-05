@@ -1,9 +1,8 @@
 {% extends 'base.html' %}
 
 {% block body %}
-
 {%for post in posts_list%}
-    <section>
+    <section class="blog-post">
         <h4>{{post['title']}}</h4>
         <p>{{post['date_uploaded']}}</p>
         <p>{{post['content']}}</p>

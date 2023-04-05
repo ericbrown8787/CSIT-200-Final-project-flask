@@ -4,8 +4,30 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    background-color:thistle;
+}
 
-form > *{
+section{
+    margin-block: 1rem;
+}
+form{
+    box-shadow: 2px 2px 2px gray;
+    max-width: fit-content;
+    padding: 1rem;
+}
+
+fieldset{
+    padding: 1rem;
+}
+
+fieldset > *{
     display: block;
+}
+
+form label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    max-width: fit-content;
 }
 
