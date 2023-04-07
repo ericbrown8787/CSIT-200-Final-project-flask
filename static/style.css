@@ -7,10 +7,25 @@
 body{
     background-color:thistle;
 }
+main{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
 
 section{
     margin-block: 1rem;
 }
+
+.console{
+    padding: 1rem;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    border-radius: 15px;
+}
+
 form{
     box-shadow: 2px 2px 2px gray;
     max-width: fit-content;
