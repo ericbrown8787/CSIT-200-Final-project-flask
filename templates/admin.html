@@ -44,6 +44,13 @@
         <!-- "/delete_blog/{{post['id']}}" -->
         <!-- <p>{{post['date_uploaded']}}</p>
         <p>{{post['content']}}</p> -->
+        <form action="/admin" method="GET">
+            <input type = "hidden" name ="form_id" value="delete_post">
+            <input type = "hidden" name ="title" value="{{post['title']}}">
+            <input type = "hidden" name="blog_id" value ="{{post['id']}}">
+            <button type="submit">Edit</button>
+
+        </form>
     </section>
 
 {% endfor %}
