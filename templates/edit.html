@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<section class="console">
+<h2>Editing {{post['title']}}</h2>
+    
+<section>
+    <form action="/admin" method="POST" class="add-post-form">
+        <input type="hidden" name="form_id" value="post_editor">
+        <input type = "hidden" name="blog_id" value ="{{post['id']}}">
+        <fieldset>
+        <legend>Edit a post:</legend>
+        <label for="title" class="title-label">Title</label>
+
+        <input type="text" name="title" id="title" class="title-input"
+               placeholder="Post Title" value="{{post['title']}}"></input>
+        <label for="content" class="content-label">Message Content</label>
+      
+        <textarea name="content" id="content" class="content-input"
+                  placeholder="Post Content"
+                  rows="15"
+                  cols="60"
+                  
+                  >{{post['content']}}</textarea>
+        <button type="submit" class="submit">Submit</button>
+    </fieldset>
+    </form>
+</section>
+
+{% endblock %}
