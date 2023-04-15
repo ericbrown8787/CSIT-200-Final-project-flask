@@ -5,8 +5,8 @@
     <section class="blog-post">
         <h4>{{post['title']}}</h4>
         <p>{{post['date_uploaded']}}</p>
-        <p>{{post['content']}}</p>
+        <!-- <p>{{post['content']}}</p> -->
+        <a href="/post/{{post['id']}}">View Post</a>
     </section>
 {% endfor %}
-
 {% endblock %}
