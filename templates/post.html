@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <section class="blog-post">
+        <h4>{{post['title']}}</h4>
+        <p>{{post['date_uploaded']}}</p>
+        <p>{{post['content']}}</p>
+    </section>
+
+
+{% endblock %}

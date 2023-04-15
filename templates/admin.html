@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
 {% block body %}
+<section class="console">
 <h2>Admin Console</h2>
+    
 <section>
     <form action="/admin" method="POST" class="add-post-form">
+        <input type="hidden" name="form_id" value="add_post">
         <fieldset>
         <legend>Add a Post:</legend>
         <label for="title" class="title-label">Title</label>
@@ -23,11 +26,45 @@
     </fieldset>
     </form>
 </section>
+
 <section>
     <h3>Edit or Delete a Post:</h3>
+    {%for post in posts_list%}
+    <section class="blog-post">
+        <p>Title: {{post['title']}}</p>
+        <p>ID: {{post['id']}}</p>
+        <p>{{post['content'][0:100]}}</p>
+
+        <form action="/admin" method="POST">
+            <input type="hidden" name="form_id" value="delete_post">
+            <input type="hidden" name="title" value ="{{post['title']}}">
+            <input type="hidden" name="blog_id" value ="{{post['id']}}">
+            <button type="submit">Delete</button>
+        </form>
+        <!-- "/delete_blog/{{post['id']}}" -->
+        <!-- <p>{{post['date_uploaded']}}</p>
+        <p>{{post['content']}}</p> -->
+        <form action="/admin" method="GET">
+            <input type = "hidden" name ="form_id" value="delete_post">
+            <input type = "hidden" name ="title" value="{{post['title']}}">
+            <input type = "hidden" name="blog_id" value ="{{post['id']}}">
+            <button type="submit">Edit</button>
+
+        </form>
+    </section>
+
+{% endfor %}
 </section>
+
 <section>
     <h3>Site Traffic</h3>
 </section>
+<section>
 
+        <form action='/admin' method='POST'>
+            <input type="hidden" name="form_id" value="logout">
+            <button  type="submit" name="logout" id="logout">Log Out</button>
+        </form>
+</section>
+</section>
 {% endblock %}
