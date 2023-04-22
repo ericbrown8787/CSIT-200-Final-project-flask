@@ -1,8 +1,21 @@
 {% extends 'base.html' %}
 {% block body %}
 
+<article class="welcome">
+    <h2 class="welcome-heading">Welcome to our site!</h2>
+    
+    <p class="welcome-text">This is a simple blog website built to demonstrate some features of the Flask server framework for Python. </p>
+    <section class="features">
+        <p class="features-text">So far, we've added the following features:</p>
+        <ul class="features-list">
+            <li class="feature">A database using the flask_sqlalchemy library.</li>
+            <li class="feature">A page listing every stored blog article, with a link to view the article's full text in a separate page.</li>
+            <li class="feature">A password-protected admin page, which allows the admin user to add, edit and delete blog posts</li>
+        </ul>
+    </section>
+    
+</article>
 
-<p>Welcome to our blog!</p>
 
 
 {% endblock %}
