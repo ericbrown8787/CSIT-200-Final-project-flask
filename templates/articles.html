@@ -1,12 +1,15 @@
 {% extends 'base.html' %}
 
 {% block body %}
-{%for post in posts_list%}
+<article class="blog-post-collection">
+    {%for post in posts_list%}
     <section class="blog-post">
         <h4>{{post['title']}}</h4>
-        <p>{{post['date_uploaded']}}</p>
-        <!-- <p>{{post['content']}}</p> -->
-        <a href="/post/{{post['id']}}">View Post</a>
+        <p>{{post['date_uploaded'].strftime("%m/%d/%Y, %H:%M:%S")}}</p>
+        <p>{{post['content'][0:100]}}...</p>
+        <a href="/post/{{post['id']}}" class="view-post-link">View Post</a>
     </section>
-{% endfor %}
+    {% endfor %}
+</article>
+
 {% endblock %}
