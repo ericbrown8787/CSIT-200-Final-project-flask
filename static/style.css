@@ -35,7 +35,9 @@ body{
     color:black;
     text-decoration: none;
 }
-
+.nav-link a:hover{
+    background-color: #FFE378;
+}
 
 main{
     padding: 1rem;
