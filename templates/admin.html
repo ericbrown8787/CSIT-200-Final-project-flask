@@ -27,8 +27,9 @@
     </form>
 </section>
 
-<section>
+<section >
     <h3>Edit or Delete a Post:</h3>
+    <section class="admin-posts-list">
     {%for post in posts_list%}
     <section class="blog-post">
         <p>Title: {{post['title']}}</p>
@@ -51,6 +52,7 @@
     </section>
 
 {% endfor %}
+</section>
 </section>
 
 <section>
