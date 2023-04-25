@@ -11,6 +11,8 @@ For the project to work, the following libraries must be installed for Anaconda:
 - `flask`
 - `json`
 - `datetime`
+- `matplotlib`
+- `os`
 - `flask_sqlalchemy`
 
 Typically, all of these libraries are included in the default Anaconda installation except for `flask_sqlalchemy`.
