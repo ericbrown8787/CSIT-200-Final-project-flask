@@ -103,7 +103,7 @@ main{
     flex-wrap:wrap;
     gap: 1.5rem;
 }
-.blog-post{
+.blog-post, .message{
     max-width: 55ch;
     border: 1px dashed teal;
     padding: 1rem;
@@ -145,4 +145,10 @@ main{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+.message{
+    display: flex; 
+    gap: 1rem;
+    flex-direction: column;
 }

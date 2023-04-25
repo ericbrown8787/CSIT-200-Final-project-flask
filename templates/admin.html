@@ -50,7 +50,6 @@
 
         </form>
     </section>
-
 {% endfor %}
 </section>
 </section>
@@ -60,12 +59,40 @@
     <h4>Total Site Traffic By Page:</h4>
     <img src="{{url_for('static',filename='./images/pie_chart.svg')}}" alt="A pie chart">
 </section>
+<section >
+    <h3>User Feedback:</h3>
+    <section class="messages-list">
+    {% if messages_list%}
+    {% for message in messages_list %}
+    <section class="message">
+        <p>From: {{message['name']}}</p>
+        <p>Email: {{message['email']}}</p>
+        <p>Message: {{message['message']}}</p>
+        
+        <form action="/admin" method="POST">
+            <input type="hidden" name="form_id" value="delete_message">
+            <input type="hidden" name="name" value ="{{message['name']}}">
+            <input type="hidden" name="message_id" value ="{{message['id']}}">
+            <button type="submit">Delete</button>
+        </form>
+    </section>
+    {% endfor %}
+    {% else %}
+    <section class="message">
+        <p>You have no new messages!</p>
+    </section>
+    {% endif %}
+    </section>
+</section>
+
 <section>
 
-        <form action='/admin' method='POST'>
-            <input type="hidden" name="form_id" value="logout">
-            <button  type="submit" name="logout" id="logout">Log Out</button>
-        </form>
+    <form action='/admin' method='POST'>
+        <input type="hidden" name="form_id" value="logout">
+        <button  type="submit" name="logout" id="logout">Log Out</button>
+    </form>
 </section>
 </section>
+
+
 {% endblock %}
