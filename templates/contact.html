@@ -2,7 +2,7 @@
 
 {% block body %}
 <section id="contact">
-    <h2><b> Contact </b></h2>
+
     
     
     
@@ -12,10 +12,10 @@
     
         <label for="name">Name:</label>
         <input id= "name" name="name" type="text" required><br>
-        <label for = "Email"> Email:</label>
+        <label for = "email"> Email:</label>
         <input id = name name="email" type="email" required><br>
-        <label>Phone Number (Optional):</label>
-        <input phone ="phone" type="tel" ><br>
+        <label for="phone">Phone Number (Optional):</label>
+        <input name ="phone" type="tel" ><br>
         <label>Phone Type:</label>
         <select name="phone_type">
             <option value="H">Home</option>
@@ -23,8 +23,8 @@
             <option value="C">Cell</option>
         </select><br>
     
-        <label>Message:</label>
-        <textarea></textarea>
+        <label for="message">Message:</label>
+        <textarea name="message"></textarea>
     
         <fieldset>
             <legend>Would you like a reply?</legend>
