@@ -106,6 +106,7 @@ main{
 .blog-post, .message{
     max-width: 55ch;
     border: 1px dashed teal;
+    background-color: gold;
     padding: 1rem;
     border-radius: 15px;
 }
